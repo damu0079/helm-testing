@@ -4,5 +4,6 @@ metadata:
   name: {{ include "test.fullname" . }}-custom
 data: 
   test: |
-    abcd
+    {{- include "project.metadata.labels"}}
+    {{- end}}
     
